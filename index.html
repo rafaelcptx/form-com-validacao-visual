@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <span id="seasub">Seasub</span>
+    <span id="text">Awesome diving <br />equipment.</span>
+    <div class="container">
+      <div id="subC" class="subC">
+        <!-- <form method="post" id="form"> -->
+        <h1>Cadastre-se.</h1>
+        <hr />
+        <label class="label" for="nome">Nome: </label>
+        <input onkeyup="valid()" type="text" id="nome" placeholder="Nome..." />
+        <label class="label" for="sobrenome">Sobrenome: </label>
+        <input
+          onkeyup="valid()"
+          type="text"
+          id="sobrenome"
+          placeholder="Sobrenome..."
+        /><br />
+        <label class="label" for="email">Email: </label>
+        <input
+          onkeyup="valid()"
+          id="email"
+          type="text"
+          name="email"
+          placeholder="Digite seu email..."
+        /><br />
+        <label class="label" for="confirm">Email: </label>
+        <input
+          onkeyup="valid()"
+          id="confirm"
+          type="text"
+          name="confirm"
+          placeholder="Confirme seu email..."
+        /><br />
+        <label class="label" for="password">Senha: </label>
+        <input
+          onkeyup="valid()"
+          type="password"
+          name="password"
+          id="pass"
+          placeholder="Senha..."
+        />
+        <button id="show" onclick="showPass()">Ver senha... 👀</button>
+        <hr />
+        <label class="label" for="termos"
+          >Antes de confirmar leia os <a href="#">termos de uso</a> :</label
+        ><br /><span id="termos"
+          >Sim, eu confirmo que li e aceito os termos!</span
+        ><input
+          onclick="valid()"
+          type="checkbox"
+          name="termos"
+          id="check"
+        /><br />
+        <div id="buttonDiv">
+          <button id="subButton" onclick="submit()">Cadastrar</button>
+        </div>
+        <hr />
+        <div id="validDiv">
+          <span id="valid0">• Nome e Sobrenome são obrigatórios.</span><br />
+          <span id="valid1">• Você precisa digitar um email válido.</span><br />
+          <span id="valid2"
+            >• Os campos de confirmação de email precisam coincidir.</span
+          ><br />
+          <span id="valid3">• Sua senha precisa ter um caractere especial.</span
+          ><br />
+          <span id="valid4">• Sua senha precisa ter no mínimo 8 dígitos.</span
+          ><br />
+        </div>
+        <!-- </form> -->
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
