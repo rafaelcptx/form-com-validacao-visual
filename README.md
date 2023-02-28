@@ -1,5 +1,5 @@
-# form-com-validacao-visual (HTML, CSS, JS, RegEx).
-
+# Formulário com validação visual. (HTML, CSS, JS, RegEx).
+Acesse (deploy) : https://rafaelcptx.github.io/form-com-validacao-visual/
 
 
 https://user-images.githubusercontent.com/109367845/221990156-3361799b-67b7-4916-85a0-27764072eecf.mp4
